@@ -8,10 +8,9 @@ def video(url):
     yt = YouTube(url)
     try:
         yt.streams.get_highest_resolution().download(output_path = path)
+        print(yt.title + los.successfuldownload())
     except:
         print(los.downloaderror())
-        return False
-    print(yt.title + los.successfuldownload())
 
 def audio(url):
     user = getpass.getuser()
@@ -19,7 +18,6 @@ def audio(url):
     yt = YouTube(url)
     try:
         yt.streams.filter(only_audio=True).first().download(output_path = path)
+        print(yt.title + los.successfuldownload())
     except:
         print(los.downloaderror())
-        return False
-    print(yt.title + los.successfuldownload())
