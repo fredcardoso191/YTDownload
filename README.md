@@ -1,4 +1,4 @@
-# Youtube Download Video & Audio
+# Download video and audio from Youtube with pytube
 
 ## If you don't have the pytube library installed, type in the terminal
 ```
