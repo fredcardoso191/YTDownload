@@ -2,5 +2,5 @@
 
 ### Create executable file
 ```
-pyinstaller --onefile --noconsole --icon=icon.ico .\main.py
+pyinstaller --noconsole .\main.py
 ```
