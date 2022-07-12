@@ -1,4 +1,6 @@
-Para criar o executável do instalador
+# YTDownload Installer
+
+### Create executable file
 ```
 pyinstaller  --noconsole .\main.py
 ```
