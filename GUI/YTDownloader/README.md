@@ -1,1 +1,0 @@
-## This application supports three languages ​​(English, Portuguese and Spanish).
