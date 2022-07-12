@@ -4,7 +4,9 @@ from pytube import YouTube
 from validation import isValidURL
 import language_os as los
 import getpass
+import pathlib
 
+drive = pathlib.Path.home().drive
 user = getpass.getuser()
 
 def main():
@@ -15,7 +17,7 @@ def main():
         else:
             try:
                 yt = YouTube(url)
-                path = f"C:/Users/{user}/Videos"
+                path = f"{drive}/Users/{user}/Videos"
                 yt.streams.get_highest_resolution().download(output_path = path)
                 messages(los.successfuldownload())
             except:
@@ -28,7 +30,7 @@ def main():
         else:
             try:
                 yt = YouTube(url)
-                path = f"C:/Users/{user}/Music"
+                path = f"{drive}/Users/{user}/Music"
                 yt.streams.filter(only_audio=True).first().download(output_path = path)
                 messages(los.successfuldownload())
             except:
