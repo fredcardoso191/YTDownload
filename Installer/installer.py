@@ -8,7 +8,7 @@ import layout
 from tkinter import messagebox
 from tkinter import *
 
-getpath = str(pathlib.Path().resolve()) + "\YTDownload"
+getpath = str(pathlib.Path().resolve()) + "\Youtube Download"
 
 source = getpath.replace('\\', '/')
 
@@ -16,7 +16,7 @@ def install(folder_path):
     if emp.isEmpty(folder_path):
         messagebox.showwarning(los.title(), los.pathinvalid())
     else:
-        destination = folder_path + "/YTDownload"
+        destination = folder_path + "/Youtube Download"
         dest = shutil.copytree(source, destination)
         shortcut.create(folder_path)
 
@@ -32,7 +32,7 @@ def install(folder_path):
         height_screen = window.winfo_screenheight()
 
         posx = width_screen/2 - width/2
-        posy = height_screen/2 - height/2
+        posy = height_screen/3 - height/3
 
         window.geometry("%dx%d+%d+%d" % (width, height, posx, posy))
 

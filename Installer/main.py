@@ -38,7 +38,7 @@ width_screen = root.winfo_screenwidth()
 height_screen = root.winfo_screenheight()
 
 posx = width_screen/2 - width/2
-posy = height_screen/2 - height/2
+posy = height_screen/3 - height/3
 
 root.geometry("%dx%d+%d+%d" % (width, height, posx, posy))
 
